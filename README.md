@@ -56,12 +56,24 @@ cd api_yamdb/infra/
 ```bash
 sudo docker-compose up -d --build 
 ```
+---
+3. Запустить миграции, создать суперпользователя и собрать статику (соблюдать последовательность):
+```bash
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py createsuperuser
+docker-compose exec web python manage.py collectstatic --no-input
+```
 ----------
+4. Доступные нам запросы можем посмотреть в [документации redoc](http://localhost:8000/redoc/).
+
+----------
+
 Авторы:
 ----------
 * **Валитов Ильмир Илсурович**
 GitHub - [CoockieVii](https://github.com/CoockieVii)
 ----------
-Документация к проекту с примерами запросов и ответов
+### MIT License:
+#### Copyright (c) 2022 [CoockieVii](https://github.com/CoockieVii)
+
 ----------
-Документация для API [доступна по ссылке](http://localhost:8000/redoc/) после установки приложения.
