@@ -45,16 +45,6 @@
 * Python 3.9+
 * Works on Linux, Windows, macOS, BSD
 
-Стек технологий
-----------
-* Python 3.9
-* Django 2.2
-* Django Rest Framework
-* Pytest
-* Simple-JWT
-* SQLite3
-* Docker-compose
-
 Установка проекта из репозитория (Linux)
 ----------
 1. Клонировать репозиторий и перейти в него в командной строке:
