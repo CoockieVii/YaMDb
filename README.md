@@ -85,17 +85,23 @@
 ```bash
 # - Скачиваем проект.
 git clone 'git@github.com:cookievii/Yamdb_infra.git'
+
 # - Переходим в папку "infra".
 cd infra/
+
 # - Создаем файл с секретами(Шаблон наполнения показан ниже).
 touch .env
+
 # - Запускаем docker-compose.
 docker-compose up -d --build
+
 # - Выполняем миграции БД.
 docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
+
 # - Создаем суперпользователя:
 docker-compose exec web python manage.py createsuperuser
+
 # - Собераем статику:
 docker-compose exec web python manage.py collectstatic --no-input
 ```
