@@ -14,11 +14,11 @@
 ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 # Описание проекта
 
-Проект **YaMDb** собирает отзывы пользователей на произведения. Произведения
+Проект **Yamdb_infra** собирает отзывы пользователей на произведения.
+Произведения
 делятся на категории: "Книги", "Фильмы", "Музыка". Список категорий может быть
 расширен.
 Сами произведения в **YaMDb** не хранятся, здесь нельзя посмотреть фильм или
